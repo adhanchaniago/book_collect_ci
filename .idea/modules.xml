@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/Template Admin/AdminLTE-master/.idea/AdminLTE-master.iml" filepath="$USER_HOME$/Template Admin/AdminLTE-master/.idea/AdminLTE-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/book_collect_ci.iml" filepath="$PROJECT_DIR$/.idea/book_collect_ci.iml" />
+      <module fileurl="file://$USER_HOME$/project_laravel_arip/budaya_ntt/.idea/projek_arip.iml" filepath="$USER_HOME$/project_laravel_arip/budaya_ntt/.idea/projek_arip.iml" />
+    </modules>
+  </component>
+</project>
