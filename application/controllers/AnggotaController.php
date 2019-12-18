@@ -23,12 +23,21 @@ class AnggotaController extends CI_Controller {
     public function dashboard()
     {
         $this->data['content'] = 'menu_admin';
+        $this->data['sidebar'] = 'sidebar_anggota';
         $this->load->view('layout/master_layout', $this->data);
     }
 
     public function add_donasi()
     {
         $this->data['content'] = 'add_donasi';
+        $this->data['sidebar'] = 'sidebar_anggota';
+        $this->load->view('layout/master_layout', $this->data);
+    }
+
+    public function add_non_donasi()
+    {
+        $this->data['content'] = 'add_non_donasi';
+        $this->data['sidebar'] = 'sidebar_anggota';
         $this->load->view('layout/master_layout', $this->data);
     }
 }

@@ -5,7 +5,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">Donasi Buku</h1>
+                    <h1 class="m-0 text-dark">Donasi Non Buku</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
@@ -26,13 +26,20 @@
                 <div class="col-md-8">
                     <!-- general form elements -->
                     <div class="card card-primary">
-                        <div class="card-header">
-                            <h3 class="card-title">Untuk Donasi Buku, Isi Formulir Dibawah Ini :</h3>
-                        </div>
-                        <!-- /.card-header -->
                         <!-- form start -->
                         <form role="form">
+                            <div class="card-header">
+                                <div class="row">
+                                    <h3 class="card-title">Jika anda ingin berdonasi, silahkan transfer ke nomor rekening......
+                                        <br> kemudian isi form dibawah ini:</h3>
+                                </div>
+                            </div>
                             <div class="card-body">
+                                <div class="row">
+                                    <div class="container">
+                                        <div class="card-title" style="float: none"><h4 style="text-align: center;">Dengan Ini Saya Bersedia donasi untuk TBM:</h4></div>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">

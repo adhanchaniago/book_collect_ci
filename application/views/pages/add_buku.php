@@ -5,12 +5,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">Donasi Buku</h1>
+                    <h1 class="m-0 text-dark">Add Buku</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Donasi Buku</li>
+                        <li class="breadcrumb-item active">Add Buku</li>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -26,86 +26,71 @@
                 <div class="col-md-8">
                     <!-- general form elements -->
                     <div class="card card-primary">
-                        <div class="card-header">
-                            <h3 class="card-title">Untuk Donasi Buku, Isi Formulir Dibawah Ini :</h3>
-                        </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form role="form">
+                        <form role="form" id="form_submit_invoice">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Nama Donatur</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                            <label for="kode_buku">Kode Buku</label>
+                                            <input type="number" class="form-control" name="kode_buku" id="kode_buku" placeholder="Kode Buku">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Pekerjaan</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Instansi</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">No Hp</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Alamat Rumah</label>
-                                            <textarea class="form-control" rows="4" placeholder="Enter ..."></textarea>
+                                            <label for="exampleInputEmail1">Jenis Buku</label>
+                                            <input type="text" class="form-control" name="jenis_buku" id="jenis_buku" placeholder="Jenis Buku">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Jumlah Buku Yang Didonasikan</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                            <label for="exampleInputEmail1">Judul Buku</label>
+                                            <input type="text" class="form-control" name="judul_buku" id="judul_buku" placeholder="Judul Buku">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Pengiriman</label>
-                                            <select class="form-control">
-                                                <option>Dalam Satu Kota</option>
-                                                <option>Dalam Satu Provinsi</option>
-                                                <option>Antar Provinsi</option>
-                                                <option>Antar Negara</option>
-                                            </select>
+                                            <label for="exampleInputEmail1">Jumlah Buku</label>
+                                            <input type="number" class="form-control" name="jumlah_buku" id="jumlah_buku" placeholder="Jumlah Buku">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Dikirim Ke TBM Dengan Alamat</label>
-                                            <textarea class="form-control" rows="3" placeholder="Jl Dewi Sartika Tegal" disabled></textarea>
+                                            <label for="exampleInputEmail1">Pengarang</label>
+                                            <input type="text" class="form-control" name="pengarang" id="pengarang" placeholder="Pengarang">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Penerbit</label>
+                                            <input type="text" class="form-control" name="penerbit" id="penerbit" placeholder="Penerbit">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Dijemput Ke Alamat Donatur</label>
-                                            <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                                            <label for="exampleInputEmail1">Tahun Terbit</label>
+                                            <input type="number" class="form-control" name="tahun_terbit" id="tahun_terbit" placeholder="Tahun Terbit">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Satu Kota/ Dalam Kota</label>
-                                            <select class="form-control">
-                                                <option>Satu Kota</option>
-                                                <option>Dalam Kota</option>
-                                            </select>
+                                            <label for="exampleInputEmail1">Lokasi Buku</label>
+                                            <input type="text" class="form-control" name="lokasi_buku" id="lokasi_buku" placeholder="Lokasi Buku">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Deskripsi</label>
+                                            <textarea class="form-control" name="deskripsi" id="deskripsi" cols="30" rows="5"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -113,7 +98,8 @@
                             <!-- /.card-body -->
 
                             <div class="card-footer">
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" id="btn_submit" class="btn btn-primary">Submit</button>
+                                <button type="reset" class="btn btn-warning">Reset</button>
                             </div>
                         </form>
                     </div>

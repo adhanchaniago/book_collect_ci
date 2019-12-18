@@ -6,5 +6,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="AdminLTE-master" />
     <orderEntry type="module" module-name="projek_arip" />
+    <orderEntry type="module" module-name="AdminLTE-master" />
+    <orderEntry type="module" module-name="accounting_rasabaik" />
   </component>
 </module>

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/Template Admin/AdminLTE-master/.idea/AdminLTE-master.iml" filepath="$USER_HOME$/Template Admin/AdminLTE-master/.idea/AdminLTE-master.iml" />
+      <module fileurl="file://$USER_HOME$/template_admin/AdminLTE-master/.idea/AdminLTE-master.iml" filepath="$USER_HOME$/template_admin/AdminLTE-master/.idea/AdminLTE-master.iml" />
+      <module fileurl="file://$USER_HOME$/rasabaik_project/accounting_rasabaik/.idea/accounting_rasabaik.iml" filepath="$USER_HOME$/rasabaik_project/accounting_rasabaik/.idea/accounting_rasabaik.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/book_collect_ci.iml" filepath="$PROJECT_DIR$/.idea/book_collect_ci.iml" />
       <module fileurl="file://$USER_HOME$/project_laravel_arip/budaya_ntt/.idea/projek_arip.iml" filepath="$USER_HOME$/project_laravel_arip/budaya_ntt/.idea/projek_arip.iml" />
     </modules>
