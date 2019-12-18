@@ -31,6 +31,7 @@ class LoginController extends CI_Controller {
             $data_session = array(
                 'nama' => $result->username,
                 'role' => $result->role,
+                'id_anggota' => $result->id_anggota,
                 'status' => "login"
             );
 

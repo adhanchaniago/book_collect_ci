@@ -72,3 +72,4 @@ $route['admin/insert_berita'] = 'adminController/insert_berita';
 $route['anggota'] = 'anggotaController/dashboard';
 $route['anggota/add_donasi'] = 'anggotaController/add_donasi';
 $route['anggota/add_non_donasi'] = 'anggotaController/add_non_donasi';
+$route['anggota/insert_donasi'] = 'anggotaController/insert_donasi';
