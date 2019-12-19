@@ -39,12 +39,32 @@ class AnggotaController extends CI_Controller {
         echo json_encode($data);
     }
 
+    public function insert_donasi_non_buku()
+    {
+        $config['upload_path']="./dist/image/bukti_transfer/";
+        $config['allowed_types']='jpeg|jpg|png';
+        $config['encrypt_name'] = TRUE;
+
+        $this->load->library('upload', $config);
+        if($this->upload->do_upload("bukti_transfer")){
+            echo "success";
+            $data = array('upload_data' => $this->upload->data());
+            $image = $data['upload_data']['file_name'];
+            $data = $this->donasi_model->save_donasi_non_buku($this->session->userdata('id_anggota'), $image);
+            echo json_encode($data);
+        } else{
+            $error = array('error' => $this->upload->display_errors());
+            echo json_encode($error);
+        }
+    }
+
+
     public function add_non_donasi()
     {
         $this->data['content'] = 'add_non_donasi';
         $this->data['sidebar'] = 'sidebar_anggota';
-        $this->data['javascript'] = null;
-        $this->data['style'] = null;
+        $this->data['javascript'] = 'donasi_js';
+        $this->data['style'] = 'donasi_style';
         $this->load->view('layout/master_layout', $this->data);
     }
 }

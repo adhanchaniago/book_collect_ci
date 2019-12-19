@@ -27,100 +27,100 @@
                     <!-- general form elements -->
                     <div class="card card-primary">
                         <!-- form start -->
-                        <form role="form">
+                        <form role="form" id="form_submit_non_donasi">
                             <div class="card-header">
                                 <div class="row">
-                                    <h3 class="card-title">Jika anda ingin berdonasi, silahkan transfer ke nomor rekening......
+                                    <h3 class="card-title">Jika anda ingin berdonasi, silahkan transfer ke nomor rekening 0014-0537-1124-9-2 (Bank BRI a/n Slamet Raharjo)
                                         <br> kemudian isi form dibawah ini:</h3>
                                 </div>
                             </div>
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="container">
-                                        <div class="card-title" style="float: none"><h4 style="text-align: center;">Dengan Ini Saya Bersedia donasi untuk TBM:</h4></div>
-                                    </div>
-                                </div>
-                                <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Nama Donatur</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                            <input type="text" name="nama_donatur" id="nama_donatur" class="form-control" placeholder="Nama Donatur">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Pekerjaan</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                            <input type="text" name="pekerjaan" id="pekerjaan" class="form-control" placeholder="Pekerjaan">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Instansi</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                            <label for="instansi">Instansi</label>
+                                            <input type="text" name="instansi" id="instansi" class="form-control" placeholder="Instansi">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">No Hp</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                            <input type="number" class="form-control" name="no_hp" id="no_hp" placeholder="No Hp">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Alamat Rumah</label>
-                                            <textarea class="form-control" rows="4" placeholder="Enter ..."></textarea>
+                                            <textarea class="form-control" rows="4" name="alamat_rumah" id="alamat_rumah" placeholder="Alamat Rumah"></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Jumlah Buku Yang Didonasikan</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                            <label for="exampleInputEmail1">Email</label>
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Pengiriman</label>
-                                            <select class="form-control">
-                                                <option>Dalam Satu Kota</option>
-                                                <option>Dalam Satu Provinsi</option>
-                                                <option>Antar Provinsi</option>
-                                                <option>Antar Negara</option>
-                                            </select>
+                                            <label for="exampleInputEmail1">Terbilang</label>
+                                            <input type="number" class="form-control" name="terbilang" id="terbilang" placeholder="terbilang">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Dikirim Ke TBM Dengan Alamat</label>
-                                            <textarea class="form-control" rows="3" placeholder="Jl Dewi Sartika Tegal" disabled></textarea>
+                                            <label for="exampleInputEmail1">Ditransfer Melalui</label>
+                                            <input type="text" class="form-control" placeholder="0014-0537-1124-9-2 (Bank BRI a/n Slamet Raharjo)" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputFile">Bukti Transfer</label>
+                                            <div class="input-group">
+                                                <div class="custom-file">
+                                                    <input type="file" class="custom-file-input" name="bukti_transfer">
+                                                    <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Dijemput Ke Alamat Donatur</label>
-                                            <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                                            <label for="pesan">Pesan</label>
+                                            <textarea class="form-control" name="pesan" id="pesan" rows="4"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Satu Kota/ Dalam Kota</label>
-                                            <select class="form-control">
-                                                <option>Satu Kota</option>
-                                                <option>Dalam Kota</option>
-                                            </select>
+                                            <label for="exampleInputEmail1">Tanggal Transfer</label>
+                                            <input type="text" class="form-control" name="tgl_transfer" id="tgl_transfer" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask>
                                         </div>
                                     </div>
+                                </div>
                                 </div>
                             </div>
                             <!-- /.card-body -->
 
                             <div class="card-footer">
                                 <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="reset" class="btn btn-warning">Reset</button>
                             </div>
                         </form>
                     </div>
