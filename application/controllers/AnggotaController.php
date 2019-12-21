@@ -18,7 +18,9 @@ class AnggotaController extends CI_Controller {
 
     public function dashboard()
     {
-        $this->data['content'] = 'menu_admin';
+        $this->data['style'] = null;
+        $this->data['javascript'] = null;
+        $this->data['content'] = 'dashboard_anggota';
         $this->data['sidebar'] = 'sidebar_anggota';
         $this->load->view('layout/master_layout', $this->data);
     }

@@ -22,7 +22,7 @@ class AdminController extends CI_Controller {
 
     public function dashboard()
     {
-        $this->data['content'] = 'menu_admin';
+        $this->data['content'] = 'dashboard_admin';
         $this->data['sidebar'] = 'sidebar_admin';
         $this->data['javascript'] = null;
         $this->data['style'] = null;

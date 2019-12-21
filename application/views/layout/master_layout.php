@@ -12,7 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Font Awesome -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
-<!--    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">-->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Tempusdominus Bbootstrap 4 -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
     <!-- iCheck -->
@@ -33,7 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     }
     ?>
     <!-- Google Font: Source Sans Pro -->
-<!--    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -95,7 +95,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <?php $this->load->view('pages/'.$content); ?>
     <footer class="main-footer">
-        <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+        <strong>Copyright &copy; 2019 <a href="http://rasabaik.com">Rasabaik</a>.</strong>
         All rights reserved.
         <div class="float-right d-none d-sm-inline-block">
             <b>Version</b> 3.0.2-pre
@@ -123,10 +123,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!-- ChartJS -->
 <script src="<?php echo base_url(); ?>plugins/chart.js/Chart.min.js"></script>
 <!-- Sparkline -->
-<script src="<?php echo base_url(); ?>plugins/sparklines/sparkline.js"></script>
+<!--<script src="--><?php //echo base_url(); ?><!--plugins/sparklines/sparkline.js"></script>-->
 <!-- JQVMap -->
-<script src="<?php echo base_url(); ?>plugins/jqvmap/jquery.vmap.min.js"></script>
-<script src="<?php echo base_url(); ?>plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!--<script src="--><?php //echo base_url(); ?><!--plugins/jqvmap/jquery.vmap.min.js"></script>-->
+<!--<script src="--><?php //echo base_url(); ?><!--plugins/jqvmap/maps/jquery.vmap.usa.js"></script>-->
 <!-- jQuery Knob Chart -->
 <script src="<?php echo base_url(); ?>plugins/jquery-knob/jquery.knob.min.js"></script>
 <!-- daterangepicker -->
@@ -141,7 +141,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!-- AdminLTE App -->
 <script src="<?php echo base_url(); ?>dist/js/adminlte.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="<?php echo base_url(); ?>dist/js/pages/dashboard.js"></script>
+<!--<script src="--><?php //echo base_url(); ?><!--dist/js/pages/dashboard.js"></script>-->
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo base_url(); ?>dist/js/demo.js"></script>
 

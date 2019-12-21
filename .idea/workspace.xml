@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02e99d81-8b26-4e6b-bc86-a916affbe44b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/application/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/AnggotaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/AnggotaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/Donasi_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Donasi_model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/layout/sidebar_anggota.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/layout/sidebar_anggota.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/layout/master_layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/layout/master_layout.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,55 +21,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+        <entry file="file://$PROJECT_DIR$/application/controllers/AdminController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="81" column="86" selection-start-line="81" selection-start-column="63" selection-end-line="81" selection-end-column="86" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/AnggotaController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/javascript/kelola_data_donasi_js.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="22" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/pages/list_donasi_non_buku_anggota.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="839">
-              <caret line="92" column="14" selection-start-line="92" selection-start-column="14" selection-end-line="92" selection-end-column="14" />
+            <state relative-caret-position="360">
+              <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/views/javascript/history_donasi_js.php">
+        <entry file="file://$PROJECT_DIR$/application/views/layout/master_layout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/Donasi_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+            <state relative-caret-position="540">
+              <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -92,7 +55,6 @@
       <find>textarea</find>
       <find>DataTable with default features</find>
       <find>example2</find>
-      <find>content-wrapper</find>
       <find>code</find>
       <find>addressClient</find>
       <find>file</find>
@@ -109,6 +71,7 @@
       <find>body</find>
       <find>where</find>
       <find>list_donasi_by_anggota</find>
+      <find>content-wrapper</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/application/models</dir>
@@ -120,7 +83,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/.htaccess" />
         <option value="$PROJECT_DIR$/application/controllers/Admin.php" />
         <option value="$PROJECT_DIR$/application/views/pages/content.php" />
         <option value="$USER_HOME$/project_laravel_arip/budaya_ntt/resources/views/layouts/dashboard.blade.php" />
@@ -152,7 +114,6 @@
         <option value="$PROJECT_DIR$/application/views/pages/kelola_donasi_non_buku.php" />
         <option value="$PROJECT_DIR$/application/views/pages/kelola_donasi_buku.php" />
         <option value="$PROJECT_DIR$/application/views/javascript/kelola_data_donasi_js.php" />
-        <option value="$PROJECT_DIR$/application/views/layout/master_layout.php" />
         <option value="$PROJECT_DIR$/application/views/javascript/add_berita_js.php" />
         <option value="$PROJECT_DIR$/application/views/pages/add_berita.php" />
         <option value="$PROJECT_DIR$/application/views/layout/sidebar_admin.php" />
@@ -162,15 +123,17 @@
         <option value="$PROJECT_DIR$/application/views/pages/list_buku.php" />
         <option value="$PROJECT_DIR$/application/views/javascript/add_buku_js.php" />
         <option value="$PROJECT_DIR$/application/models/Buku_model.php" />
-        <option value="$PROJECT_DIR$/application/controllers/AdminController.php" />
         <option value="$PROJECT_DIR$/application/views/style/donasi_style.php" />
         <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/application/views/layout/sidebar_anggota.php" />
         <option value="$PROJECT_DIR$/application/views/pages/list_donasi_anggota.php" />
-        <option value="$PROJECT_DIR$/application/controllers/AnggotaController.php" />
         <option value="$PROJECT_DIR$/application/models/Donasi_model.php" />
         <option value="$PROJECT_DIR$/application/views/pages/list_donasi_non_buku_anggota.php" />
         <option value="$PROJECT_DIR$/application/views/javascript/history_donasi_js.php" />
+        <option value="$PROJECT_DIR$/application/controllers/AnggotaController.php" />
+        <option value="$PROJECT_DIR$/application/views/pages/dashboard_anggota.php" />
+        <option value="$PROJECT_DIR$/application/controllers/AdminController.php" />
+        <option value="$PROJECT_DIR$/application/views/layout/master_layout.php" />
       </list>
     </option>
   </component>
@@ -222,13 +185,6 @@
               <item name="book_collect_ci" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book_collect_ci" type="b2602c69:ProjectViewProjectNode" />
-              <item name="book_collect_ci" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="book_collect_ci" type="b2602c69:ProjectViewProjectNode" />
@@ -289,6 +245,12 @@
               <item name="book_collect_ci" type="b2602c69:ProjectViewProjectNode" />
               <item name="AdminLTE-master" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book_collect_ci" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdminLTE-master" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="tables" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -296,6 +258,11 @@
               <item name="AdminLTE-master" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="UI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book_collect_ci" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdminLTE-master" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -359,7 +326,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123600000" />
+    <option name="totallyTimeSpent" value="124643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="0" />
@@ -411,24 +378,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/template_admin/AdminLTE-master/pages/tables/data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="809">
-          <caret line="1617" selection-start-line="1617" selection-end-line="1617" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/rasabaik_project/accounting_rasabaik/resources/views/invoice/view.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/rasabaik_project/accounting_rasabaik/resources/views/purchaseOrder/view.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2385" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/rasabaik_project/accounting_rasabaik/resources/views/purchaseOrder/add.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -554,13 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/layout/master_layout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/pages/add_donasi.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="669">
@@ -648,13 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/pages/kelola_donasi_buku.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -718,20 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="81" column="86" selection-start-line="81" selection-start-column="63" selection-end-line="81" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/AnggotaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/pages/kelola_donasi_non_buku.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
@@ -757,6 +678,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/AnggotaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/template_admin/AdminLTE-master/pages/examples/language-menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="703" column="2" lean-forward="true" selection-start-line="703" selection-start-column="2" selection-end-line="751" selection-end-column="28" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/pages/dashboard_anggota.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/pages/dashboard_admin.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="81" column="86" selection-start-line="81" selection-start-column="63" selection-end-line="81" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/layout/master_layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
         </state>
       </provider>
     </entry>
