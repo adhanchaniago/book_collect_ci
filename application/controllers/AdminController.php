@@ -4,22 +4,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class AdminController extends CI_Controller {
 
-    /**
-     * Index Page for this controller.
-     *
-     * Maps to the following URL
-     * 		http://example.com/index.php/welcome
-     *	- or -
-     * 		http://example.com/index.php/welcome/index
-     *	- or -
-     * Since this controller is set as the default controller in
-     * config/routes.php, it's displayed at http://example.com/
-     *
-     * So any other public methods not prefixed with an underscore will
-     * map to /index.php/welcome/<method_name>
-     * @see https://codeigniter.com/user_guide/general/urls.html
-     */
-
     public function __construct()
     {
         parent::__construct();
@@ -99,9 +83,20 @@ class AdminController extends CI_Controller {
 
     public function insert_berita()
     {
-        $data = $this->berita_model->save_berita();
+        $config['upload_path']="./dist/image/berita/";
+        $config['allowed_types']='jpeg|jpg|png';
+        $config['encrypt_name'] = TRUE;
 
-        echo json_encode($data);
+        $this->load->library('upload', $config);
+        if($this->upload->do_upload("image")){
+            $data = array('upload_data' => $this->upload->data());
+            $image = $data['upload_data']['file_name'];
+            $data = $this->berita_model->save_berita($image);
+            echo json_encode($data);
+        } else{
+            $error = array('error' => $this->upload->display_errors());
+            echo json_encode($error);
+        }
     }
 
     public function change_progres_buku()

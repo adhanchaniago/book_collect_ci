@@ -12,25 +12,29 @@
     //Money Euro
     $('[data-mask]').inputmask();
 
-    //Simpan Barang
-    $('#btn_submit').on('click',function(){
-        var judul=$('#judul').val();
-        var tanggal=$('#datemask').val();
-        var isi=$('#isi').val();
-        var penulis=$('#penulis').val();
-        $.ajax({
-            type : "POST",
-            url  : "<?php echo base_url();?>admin/insert_berita",
-            dataType : "JSON",
-            data : {judul:judul , tanggal:tanggal, isi:isi, penulis:penulis},
-            success: function(data){
-                toastr.success('Berita Sudah Berhasil Ditambahkan');
-                console.log(data);
-                $('#form_submit_invoice').trigger("reset");
-            }
+    $(document).ready(function(){
+        //Simpan Barang
+        $('#form_submit_berita').submit(function(event) {
+            var judul=$('#judul').val();
+            var tanggal=$('#datemask').val();
+            var isi=$('#isi').val();
+            var penulis=$('#penulis').val();
+            event.preventDefault();
+            $.ajax({
+                type : "POST",
+                url  : "<?php echo base_url();?>admin/insert_berita",
+                processData:false,
+                contentType:false,
+                cache:false,
+                async:false,
+                data : new FormData(this),
+                success: function(data){
+                    toastr.success('Berita Sudah Berhasil Ditambahkan');
+                    $('#form_submit_berita').trigger("reset");
+                }
+            });
         });
-        return false;
-    });
+    })
 
     $(function () {
         // Summernote

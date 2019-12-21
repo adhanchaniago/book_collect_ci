@@ -28,13 +28,13 @@
                     <div class="card card-primary">
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form role="form" id="form_submit_invoice">
+                        <form role="form" id="form_submit_berita">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="kode_buku">Judul</label>
-                                            <input type="number" class="form-control" name="judul" id="judul" placeholder="Judul Berita">
+                                            <input type="text" class="form-control" name="judul" id="judul" placeholder="Judul Berita">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -57,6 +57,12 @@
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Penulis</label>
                                             <input type="text" class="form-control" name="penulis" id="penulis" placeholder="Pengarang">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">image</label>
+                                            <input type="file" class="form-control" name="image" id="image">
                                         </div>
                                     </div>
                                 </div>
