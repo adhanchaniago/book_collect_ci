@@ -50,7 +50,23 @@
                                 <td><?php echo $list_buku->pengarang ?></td>
                                 <td><?php echo $list_buku->penerbit ?></td>
                                 <td><?php echo $list_buku->tahun_terbit ?></td>
-                                <td>X</td>
+                                <td>
+                                    <a
+                                            href="javascript:;"
+                                            data-id="<?php echo $list_buku->id ?>"
+                                            data-kode="<?php echo $list_buku->kode_buku ?>"
+                                            data-jenis="<?php echo $list_buku->jenis_buku ?>"
+                                            data-judul="<?php echo $list_buku->judul_buku ?>"
+                                            data-desc="<?php echo $list_buku->deskripsi ?>"
+                                            data-jumlah="<?php echo $list_buku->jumlah_buku ?>"
+                                            data-pengarang="<?php echo $list_buku->pengarang ?>"
+                                            data-penerbit="<?php echo $list_buku->penerbit ?>"
+                                            data-tahun="<?php echo $list_buku->tahun_terbit ?>"
+                                            data-lokasi="<?php echo $list_buku->lokasi_buku ?>"
+                                            data-toggle="modal" data-target="#edit-buku">
+                                        <button data-toggle="modal" data-target="#modal-default" data-toggle="tooltip" data-placement="top" title="Edit Buku"><i class="fas fa-edit"></i></button>
+                                    </a>
+                                </td>
                             </tr>
                             <?php endforeach;
                             } else {echo "<tr><td>Data Not Found</td></tr>";}?>
@@ -66,5 +82,102 @@
         <!-- /.row -->
     </section>
     <!-- /.content -->
+
+    <div class="modal fade" id="edit-buku">
+        <div class="modal-dialog  modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Edit Buku</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card card-primary">
+                        <!-- /.card-header -->
+                        <!-- form start -->
+                        <form role="form" id="form_submit_invoice">
+                            <div class="card-body">
+                                <input type="hidden" id="id_buku" name="id_buku">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="kode_buku">Kode Buku</label>
+                                            <input type="number" class="form-control" name="kode_buku" id="kode_buku" placeholder="Kode Buku">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Jenis Buku</label>
+                                            <input type="text" class="form-control" name="jenis_buku" id="jenis_buku" placeholder="Jenis Buku">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Judul Buku</label>
+                                            <input type="text" class="form-control" name="judul_buku" id="judul_buku" placeholder="Judul Buku">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Jumlah Buku</label>
+                                            <input type="number" class="form-control" name="jumlah_buku" id="jumlah_buku" placeholder="Jumlah Buku">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Pengarang</label>
+                                            <input type="text" class="form-control" name="pengarang" id="pengarang" placeholder="Pengarang">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Penerbit</label>
+                                            <input type="text" class="form-control" name="penerbit" id="penerbit" placeholder="Penerbit">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Tahun Terbit</label>
+                                            <input type="number" class="form-control" name="tahun_terbit" id="tahun_terbit" placeholder="Tahun Terbit">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Lokasi Buku</label>
+                                            <input type="text" class="form-control" name="lokasi_buku" id="lokasi_buku" placeholder="Lokasi Buku">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Deskripsi</label>
+                                            <textarea class="form-control" name="deskripsi" id="deskripsi" cols="30" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.card-body -->
+
+                            <div class="card-footer">
+                                <button type="submit" id="btn_submit_edit" class="btn btn-primary">Submit</button>
+                                <button type="reset" class="btn btn-warning">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.card -->
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+
 </div>
 <!-- /.content-wrapper -->

@@ -75,10 +75,10 @@
                     </div>
                     <div class="modal-body">
                         <img src="" id="image" name="image" width="100%">
-                        <br>
+                            <br>
                         <div id="isi"></div>
                     </div>
-                </form>
+                </div>
             </div>
             <!-- /.modal-content -->
         </div>

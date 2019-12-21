@@ -25,4 +25,22 @@ class Buku_model extends CI_Model{
         $hasil = $this->db->insert($this->_table, $this);
         return $hasil;
     }
+
+    public function update_buku(){
+        $post = $this->input->post();
+
+        $data = array(
+            'kode_buku' =>  $post['kode_buku'],
+            'jenis_buku' => $post['jenis_buku'],
+            'judul_buku' => $post['judul_buku'],
+            'jumlah_buku' => $post['jumlah_buku'],
+            'pengarang' => $post['pengarang'],
+            'tahun_terbit' => $post['tahun_terbit'],
+            'lokasi_buku' => $post['lokasi_buku'],
+            'deskripsi' => $post['deskripsi'],
+        );
+
+        $this->db->where('id', $post['id']);
+        return $this->db->update($this->_table, $data);
+    }
 }

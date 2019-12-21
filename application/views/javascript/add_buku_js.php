@@ -33,4 +33,55 @@
         });
         return false;
     });
+
+
+    $(document).ready(function() {
+        $('#edit-buku').on('show.bs.modal', function (event) {
+            var div = $(event.relatedTarget) // Tombol dimana modal di tampilkan
+            var modal          = $(this)
+
+            // Isi nilai pada field
+            modal.find('#kode_buku').val(div.data('kode'));
+            modal.find('#id_buku').val(div.data('id'));
+            modal.find('#jenis_buku').val(div.data('jenis'));
+            modal.find('#judul_buku').val(div.data('judul'));
+            modal.find('#jumlah_buku').val(div.data('jumlah'));
+            modal.find('#pengarang').val(div.data('pengarang'));
+            modal.find('#penerbit').val(div.data('penerbit'));
+            modal.find('#tahun_terbit').val(div.data('tahun'));
+            modal.find('#lokasi_buku').val(div.data('lokasi'));
+            modal.find('#deskripsi').val(div.data('desc'));
+        });
+
+        //Simpan Barang
+        $('#btn_submit_edit').on('click',function(){
+            var kode_buku=$('#kode_buku').val();
+            var id=$('#id_buku').val();
+            var jenis_buku=$('#jenis_buku').val();
+            var judul_buku=$('#judul_buku').val();
+            var jumlah_buku=$('#jumlah_buku').val();
+            var pengarang=$('#pengarang').val();
+            var penerbit=$('#penerbit').val();
+            var tahun_terbit=$('#tahun_terbit').val();
+            var lokasi_buku=$('#lokasi_buku').val();
+            var deskripsi=$('#deskripsi').val();
+            $.ajax({
+                type : "POST",
+                url  : "<?php echo base_url();?>admin/update_buku",
+                dataType : "JSON",
+                data : {id:id, kode_buku:kode_buku, jenis_buku:jenis_buku, judul_buku:judul_buku, jumlah_buku:jumlah_buku,
+                    pengarang:pengarang, penerbit:penerbit, lokasi_buku:lokasi_buku, tahun_terbit:tahun_terbit, deskripsi:deskripsi},
+                success: function(data){
+                    toastr.success('Buku Sudah Berhasil Di Update');
+                    console.log(data);
+                    $('#form_submit_invoice').trigger("reset");
+                    window.location.reload(false);
+                }
+            });
+            return false;
+        });
+
+
+    });
+
 </script>

@@ -62,6 +62,13 @@ class AdminController extends CI_Controller {
         echo json_encode($data);
     }
 
+    public function edit_buku()
+    {
+        $data = $this->buku_model->update_buku();
+
+        echo json_encode($data);
+    }
+
     public function list_buku()
     {
         $this->data['content'] = 'list_buku';
