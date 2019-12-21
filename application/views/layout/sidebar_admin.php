@@ -73,6 +73,29 @@
                     </li>
                 </ul>
             </li>
+            <li class="nav-item has-treeview">
+                <a href="#" class="nav-link active">
+                    <i class="nav-icon fas fa-newspaper"></i>
+                    <p>
+                        Kelola Data Donasi
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="<?php echo base_url(); ?>admin/donasi_buku" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Donasi Buku</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="<?php echo base_url(); ?>admin/donasi_non_buku" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Donasi Non Buku</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </nav>
     <!-- /.sidebar-menu -->

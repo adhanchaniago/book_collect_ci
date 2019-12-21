@@ -27,6 +27,7 @@ class AdminController extends CI_Controller {
         $this->load->model("user_model");
         $this->load->model("buku_model");
         $this->load->model("berita_model");
+        $this->load->model("donasi_model");
         if($this->session->userdata('status') != "login"){
             redirect(base_url("login"));
         }
@@ -101,5 +102,39 @@ class AdminController extends CI_Controller {
         $data = $this->berita_model->save_berita();
 
         echo json_encode($data);
+    }
+
+    public function change_progres_buku()
+    {
+        $data = $this->donasi_model->change_progres("donasi_buku");
+
+        echo json_encode($data);
+    }
+
+    public function change_progres_non_buku()
+    {
+        $data = $this->donasi_model->change_progres("donasi_non_buku");
+
+        echo json_encode($data);
+    }
+
+    public function donasi_buku()
+    {
+        $this->data['content'] = 'kelola_donasi_buku';
+        $this->data['sidebar'] = 'sidebar_admin';
+        $this->data['javascript'] = 'kelola_data_donasi_js';
+        $this->data['style'] = null;
+        $this->data['list_donasi'] = $this->donasi_model->list_donasi_buku_with_anggota();
+        $this->load->view('layout/master_layout', $this->data);
+    }
+
+    public function donasi_non_buku()
+    {
+        $this->data['content'] = 'kelola_donasi_non_buku';
+        $this->data['sidebar'] = 'sidebar_admin';
+        $this->data['javascript'] = 'kelola_data_donasi_js';
+        $this->data['style'] = null;
+        $this->data['list_donasi'] = $this->donasi_model->list_donasi_non_buku_with_anggota();
+        $this->load->view('layout/master_layout', $this->data);
     }
 }
