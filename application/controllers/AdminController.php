@@ -99,6 +99,21 @@ class AdminController extends CI_Controller {
         }
     }
 
+    public function content_berita($id){
+        echo $this->berita_model->content_berita($id);
+    }
+
+    public function list_berita()
+    {
+        $this->data['content'] = 'list_berita';
+        $this->data['sidebar'] = 'sidebar_admin';
+        $this->data['javascript'] = 'berita_js';
+        $this->data['style'] = null;
+        $this->data['list_berita'] = $this->berita_model->list_berita();
+        $this->load->view('layout/master_layout', $this->data);
+    }
+
+
     public function change_progres_buku()
     {
         $data = $this->donasi_model->change_progres("donasi_buku");

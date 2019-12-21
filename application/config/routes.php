@@ -68,10 +68,11 @@ $route['admin/insert_buku'] = 'adminController/insert_buku';
 $route['admin/list_buku'] = 'adminController/list_buku';
 $route['admin/add_berita'] = 'adminController/add_berita';
 $route['admin/insert_berita'] = 'adminController/insert_berita';
+$route['admin/list_berita'] = 'adminController/list_berita';
 $route['admin/donasi_non_buku'] = 'adminController/donasi_non_buku';
 $route['admin/donasi_buku'] = 'adminController/donasi_buku';
 $route['admin/non_buku/change_progres'] = 'adminController/change_progres_non_buku';
-$route['admin/buku/change_progres'] = 'adminController/change_progres_buku';
+$route['admin/content_berita/(:any)'] = 'adminController/content_berita/$1';
 # anggota
 $route['anggota'] = 'anggotaController/dashboard';
 $route['anggota/add_donasi'] = 'anggotaController/add_donasi';

@@ -15,4 +15,15 @@ class Berita_model extends CI_Model{
         $hasil = $this->db->insert($this->_table, $this);
         return $hasil;
     }
+
+    function list_berita(){
+        return $this->db->get($this->_table)->result();
+    }
+
+    function content_berita($id){
+        $this->db->where('id', $id);
+        $res = $this->db->get($this->_table)->row();
+        return $res->isi;
+    }
+
 }
