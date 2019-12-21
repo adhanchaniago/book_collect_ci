@@ -32,6 +32,26 @@ class AnggotaController extends CI_Controller {
         $this->load->view('layout/master_layout', $this->data);
     }
 
+    public function history_donasi()
+    {
+        $this->data['content'] = 'list_donasi_anggota';
+        $this->data['sidebar'] = 'sidebar_anggota';
+        $this->data['javascript'] = 'history_donasi_js';
+        $this->data['style'] = 'add_buku_style';
+        $this->data['list_donasi'] = $this->donasi_model->list_donasi_by_anggota($this->session->userdata('id_anggota'));
+        $this->load->view('layout/master_layout', $this->data);
+    }
+
+    public function history_donasi_non_buku()
+    {
+        $this->data['content'] = 'list_donasi_non_buku_anggota';
+        $this->data['sidebar'] = 'sidebar_anggota';
+        $this->data['javascript'] = 'history_donasi_js';
+        $this->data['style'] = 'add_buku_style';
+        $this->data['list_donasi'] = $this->donasi_model->list_donasi_non_buku_by_anggota($this->session->userdata('id_anggota'));
+        $this->load->view('layout/master_layout', $this->data);
+    }
+
     public function insert_donasi()
     {
         $data = $this->donasi_model->save_donasi($this->session->userdata('id_anggota'));

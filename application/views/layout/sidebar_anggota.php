@@ -26,7 +26,7 @@
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <a href="./index.html" class="nav-link">
+                        <a href="<?php echo base_url(); ?>anggota/donasi/history" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
                             <p>History Donasi</p>
                         </a>
@@ -49,7 +49,7 @@
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <a href="./index.html" class="nav-link">
+                        <a href="<?php echo base_url(); ?>anggota/donasi_non_buku/history" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
                             <p>History Donasi</p>
                         </a>

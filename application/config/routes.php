@@ -78,6 +78,8 @@ $route['admin/content_berita/(:any)'] = 'adminController/content_berita/$1';
 # anggota
 $route['anggota'] = 'anggotaController/dashboard';
 $route['anggota/add_donasi'] = 'anggotaController/add_donasi';
+$route['anggota/donasi/history'] = 'anggotaController/history_donasi';
+$route['anggota/donasi_non_buku/history'] = 'anggotaController/history_donasi_non_buku';
 $route['anggota/add_donasi_non_buku'] = 'anggotaController/add_non_donasi';
 $route['anggota/insert_donasi'] = 'anggotaController/insert_donasi';
 $route['anggota/insert_donasi_non_buku'] = 'anggotaController/insert_donasi_non_buku';

@@ -9,6 +9,16 @@ class Donasi_model extends CI_Model{
         return $this->db->get("donasi_buku")->result();
     }
 
+    function list_donasi_by_anggota($id_anggota){
+        $this->db->where('id_user', $id_anggota);
+        return $this->db->get("donasi_buku")->result_array();
+    }
+
+    function list_donasi_non_buku_by_anggota($id_anggota){
+        $this->db->where('id_user', $id_anggota);
+        return $this->db->get("donasi_non_buku")->result_array();
+    }
+
     function list_donasi_non_buku_with_anggota(){
         $sql = "SELECT `donasi_non_buku`.`id`, `donasi_non_buku`.`nama_donatur`, `donasi_non_buku`.`terbilang`, 
 `donasi_non_buku`.`progress`, `donasi_non_buku`.`tgl_transfer`, `donasi_non_buku`.`bukti_transfer`, `anggota`.`nama` 
