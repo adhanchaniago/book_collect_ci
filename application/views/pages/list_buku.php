@@ -53,6 +53,14 @@
                                 <td>
                                     <a
                                             href="javascript:;"
+                                            data-cover="<?php echo $list_buku->cover_buku ?>"
+                                            data-toggle="modal" data-target="#show-cover">
+                                        <button data-toggle="modal" data-target="#modal-default" class="btn btn-warning">View Cover Buku</button>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a
+                                            href="javascript:;"
                                             data-id="<?php echo $list_buku->id ?>"
                                             data-kode="<?php echo $list_buku->kode_buku ?>"
                                             data-jenis="<?php echo $list_buku->jenis_buku ?>"
@@ -82,6 +90,24 @@
         <!-- /.row -->
     </section>
     <!-- /.content -->
+
+    <div class="modal fade" id="show-cover">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Cover Buku</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img id="cover_buku" name="cover_buku" src="" alt="" width="100%">
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
 
     <div class="modal fade" id="edit-buku">
         <div class="modal-dialog  modal-xl">

@@ -59,6 +59,14 @@
             modal.find('#deskripsi').val(div.data('desc'));
         });
 
+        $('#show-cover').on('show.bs.modal', function (event) {
+            var div = $(event.relatedTarget) // Tombol dimana modal di tampilkan
+            var modal          = $(this)
+
+            // Isi nilai pada field
+            modal.find('#cover_buku').attr("src", "<?php echo base_url();?>dist/image/cover_buku/"+div.data('cover'));
+        });
+
         //Simpan Barang
         $('#form_submit_edit_buku').submit(function(event) {
             var kode_buku=$('#kode_buku').val();
