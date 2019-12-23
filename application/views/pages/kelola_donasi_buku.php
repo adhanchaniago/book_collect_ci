@@ -33,6 +33,7 @@
                                 <th>Progress</th>
                                 <th>Jumlah Buku</th>
                                 <th>No Hp</th>
+                                <th>Alamat</th>
                                 <th>Cara Donasi</th>
                                 <th>Action</th>
                             </tr>
@@ -57,6 +58,7 @@
                                         "><?php echo $list_donasi['progress'] ?></span></td>
                                         <td><?php echo $list_donasi['jumlah_buku'] ?></td>
                                         <td><?php echo $list_donasi['no_hp'] ?></td>
+                                        <td><?php echo $list_donasi['alamat_rumah'] ?></td>
                                         <td><?php echo $list_donasi['cara_donasi'] ?></td>
                                         <td><a
                                                     href="javascript:;"

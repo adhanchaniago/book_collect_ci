@@ -29,7 +29,8 @@ FROM `donasi_non_buku` JOIN `anggota` ON `anggota`.`id_anggota` = `donasi_non_bu
 
     function list_donasi_buku_with_anggota(){
         $sql = "SELECT `donasi_buku`.`id`, `donasi_buku`.`nama_donatur`, `donasi_buku`.`jumlah_buku`, 
-`donasi_buku`.`progress`, `donasi_buku`.`cara_donasi`, `donasi_buku`.`instansi`, `donasi_buku`.`no_hp`, `anggota`.`nama` 
+`donasi_buku`.`progress`, `donasi_buku`.`cara_donasi`, `donasi_buku`.`instansi`, `donasi_buku`.`no_hp`, 
+`donasi_buku`.`alamat_rumah`, `anggota`.`nama` 
 FROM `donasi_buku` JOIN `anggota` ON `anggota`.`id_anggota` = `donasi_buku`.`id_user`";
         $query = $this->db->query($sql);
         return $query->result_array();
