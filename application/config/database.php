@@ -75,7 +75,12 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+
+//	'hostname' => 'rasabaik.com',
+//	'username' => 'u6256344_risha',
+//	'password' => 'rahasia123',
+//	'database' => 'u6256344_book_collect',
+    'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => '',
 	'database' => 'book_collect',

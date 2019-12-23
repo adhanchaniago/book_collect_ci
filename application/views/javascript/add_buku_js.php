@@ -9,30 +9,36 @@
     });
 
     //Simpan Barang
-    $('#btn_submit').on('click',function(){
-        var kode_buku=$('#kode_buku').val();
-        var jenis_buku=$('#jenis_buku').val();
-        var judul_buku=$('#judul_buku').val();
-        var jumlah_buku=$('#jumlah_buku').val();
-        var pengarang=$('#pengarang').val();
-        var penerbit=$('#penerbit').val();
-        var tahun_terbit=$('#tahun_terbit').val();
-        var lokasi_buku=$('#lokasi_buku').val();
-        var deskripsi=$('#deskripsi').val();
-        $.ajax({
-            type : "POST",
-            url  : "<?php echo base_url();?>admin/insert_buku",
-            dataType : "JSON",
-            data : {kode_buku:kode_buku , jenis_buku:jenis_buku, judul_buku:judul_buku, jumlah_buku:jumlah_buku,
-                pengarang:pengarang, penerbit:penerbit, lokasi_buku:lokasi_buku, tahun_terbit:tahun_terbit, deskripsi:deskripsi},
-            success: function(data){
-                toastr.success('Buku Sudah Berhasil Ditambahkan');
-                console.log(data);
-                $('#form_submit_invoice').trigger("reset");
-            }
+    $(document).ready(function(){
+        $('#form_submit_buku').submit(function(event) {
+            var kode_buku=$('#kode_buku').val();
+            var jenis_buku=$('#jenis_buku').val();
+            var judul_buku=$('#judul_buku').val();
+            var jumlah_buku=$('#jumlah_buku').val();
+            var pengarang=$('#pengarang').val();
+            var penerbit=$('#penerbit').val();
+            var tahun_terbit=$('#tahun_terbit').val();
+            var lokasi_buku=$('#lokasi_buku').val();
+            var deskripsi=$('#deskripsi').val();
+            event.preventDefault();
+            $.ajax({
+                type : "POST",
+                url  : "<?php echo base_url();?>admin/insert_buku",
+                processData:false,
+                contentType:false,
+                cache:false,
+                async:false,
+                data : new FormData(this),
+                success: function(data){
+                    toastr.success('Buku Sudah Berhasil Ditambahkan');
+                    console.log(data);
+                    $('#form_submit_buku').trigger("reset");
+                }
+            });
+            return false;
         });
-        return false;
     });
+
 
 
     $(document).ready(function() {

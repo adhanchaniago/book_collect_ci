@@ -28,7 +28,7 @@
                     <div class="card card-primary">
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form role="form" id="form_submit_invoice">
+                        <form role="form" id="form_submit_buku">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-6">
@@ -87,10 +87,16 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Deskripsi</label>
                                             <textarea class="form-control" name="deskripsi" id="deskripsi" cols="30" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Cover Buku (max 200Kb)</label>
+                                            <input type="file" class="form-control" name="cover_buku" id="cover_buku">
                                         </div>
                                     </div>
                                 </div>

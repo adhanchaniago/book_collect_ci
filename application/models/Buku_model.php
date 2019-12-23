@@ -10,7 +10,7 @@ class Buku_model extends CI_Model{
     }
 
 
-    public function save_buku()
+    public function save_buku($image)
     {
         $post = $this->input->post();
         $this->kode_buku = $post["kode_buku"];
@@ -22,6 +22,7 @@ class Buku_model extends CI_Model{
         $this->tahun_terbit = $post["tahun_terbit"];
         $this->lokasi_buku = $post["lokasi_buku"];
         $this->deskripsi = $post["deskripsi"];
+        $this->cover_buku = $image;
         $hasil = $this->db->insert($this->_table, $this);
         return $hasil;
     }
