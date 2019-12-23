@@ -75,9 +75,20 @@ class AdminController extends CI_Controller {
 
     public function edit_buku()
     {
-        $data = $this->buku_model->update_buku();
+        $config['upload_path']="./dist/image/cover_buku/";
+        $config['allowed_types']='jpeg|jpg|png';
+        $config['encrypt_name'] = TRUE;
 
-        echo json_encode($data);
+        $this->load->library('upload', $config);
+        if($this->upload->do_upload("cover_buku")){
+            $data = array('upload_data' => $this->upload->data());
+            $image = $data['upload_data']['file_name'];
+            $data = $this->buku_model->update_buku($image);
+            echo json_encode($data);
+        } else{
+            $data = $this->buku_model->update_buku(null);
+            echo json_encode($data);
+        }
     }
 
     public function list_buku()

@@ -60,7 +60,7 @@
         });
 
         //Simpan Barang
-        $('#btn_submit_edit').on('click',function(){
+        $('#form_submit_edit_buku').submit(function(event) {
             var kode_buku=$('#kode_buku').val();
             var id=$('#id_buku').val();
             var jenis_buku=$('#jenis_buku').val();
@@ -71,21 +71,25 @@
             var tahun_terbit=$('#tahun_terbit').val();
             var lokasi_buku=$('#lokasi_buku').val();
             var deskripsi=$('#deskripsi').val();
+            event.preventDefault();
             $.ajax({
                 type : "POST",
                 url  : "<?php echo base_url();?>admin/update_buku",
-                dataType : "JSON",
-                data : {id:id, kode_buku:kode_buku, jenis_buku:jenis_buku, judul_buku:judul_buku, jumlah_buku:jumlah_buku,
-                    pengarang:pengarang, penerbit:penerbit, lokasi_buku:lokasi_buku, tahun_terbit:tahun_terbit, deskripsi:deskripsi},
+                processData:false,
+                contentType:false,
+                cache:false,
+                async:false,
+                data : new FormData(this),
                 success: function(data){
                     toastr.success('Buku Sudah Berhasil Di Update');
                     console.log(data);
-                    $('#form_submit_invoice').trigger("reset");
+                    $('#form_submit_edit_buku').trigger("reset");
                     window.location.reload(false);
                 }
             });
             return false;
         });
+
 
 
     });

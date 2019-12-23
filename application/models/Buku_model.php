@@ -27,7 +27,7 @@ class Buku_model extends CI_Model{
         return $hasil;
     }
 
-    public function update_buku(){
+    public function update_buku($image){
         $post = $this->input->post();
 
         $data = array(
@@ -41,7 +41,11 @@ class Buku_model extends CI_Model{
             'deskripsi' => $post['deskripsi'],
         );
 
-        $this->db->where('id', $post['id']);
+        if ($image != null){
+            $data = array('cover_buku' => $image);
+        }
+
+        $this->db->where('id', $post['id_buku']);
         return $this->db->update($this->_table, $data);
     }
 }
