@@ -59,6 +59,7 @@ $route['logout'] = 'loginController/logout';
 $route['register'] = 'loginController/register';
 $route['register/insert'] = 'loginController/insert_user';
 $route['berita'] = 'frontController/berita';
+$route['berita/(:num)'] = 'frontController/berita';
 
 # admin
 $route['admin'] = 'adminController/dashboard';

@@ -26,4 +26,14 @@ class Berita_model extends CI_Model{
         return $res->isi;
     }
 
+    function jumlah_data(){
+        return $this->db->get($this->_table)->num_rows();
+    }
+
+    function berita_data($number, $offset){
+        $this->db->limit($number, $offset);
+        $query = $this->db->get($this->_table)->result();
+        return $query;
+    }
+
 }

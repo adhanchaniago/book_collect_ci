@@ -1,3 +1,6 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 
@@ -39,89 +42,35 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-md-6 section-gap-top">
-                <div class="single-cause">
-                    <div class="top">
-                        <div class="thumb">
-                            <img class="c-img img-fluid" src="img/causes/c1.jpg" alt="">
+            <?php
+            if ($list_berita != null) {
+                foreach ($list_berita as $list_berita):
+                    ?>
+                    <div class="col-lg-4 col-md-6 section-gap-bottom">
+                        <div class="single-cause">
+                            <div class="top">
+                                <div class="thumb">
+                                    <img class="c-img img-fluid" src="<?php echo base_url()."dist/image/berita/".$list_berita->image;?>" alt="">
+                                </div>
+                                <a href="#">
+                                    <h3><?php echo $list_berita->judul; ?></h3>
+                                </a>
+                                <p class="text">
+                                    <?php echo date('d F Y', strtotime($list_berita->tanggal)); ?>
+                                <p class="text">
+                                    <?php echo substr(preg_replace('/<(style).*?\/(style)>|<.*?>|\s\s\s/', '', $list_berita->isi), 0, 199); ?>
+                                </p>
+                            </div>
+                            <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+
+                                <a href="#" class="primary-btn primary-btn1">View Details</a>
+                            </div>
                         </div>
-                        <a href="#">
-                            <h3>Perkenalkan Taman Baca Masyarakat Melalui Perlombaan Anak</h3>
-                        </a>
-                        <p class="text">
-                            12 Desember 2019
-                        <p class="text">
-                            Brebes,- Dalam rangka memperingati Hari Ulang Tahun Kabupaten Brebes ke 341 tahun, Taman Baca Masyarakat (TBM) Desa Sigambir Kecamatan Brebes Kabupaten Brebes ikut
-                        </p>
                     </div>
-                    <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-
-                        <a href="#" class="primary-btn primary-btn1">View Details</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 section-gap-top">
-                <div class="single-cause">
-                    <div class="top">
-                        <div class="thumb">
-                            <img class="c-img img-fluid" src="img/causes/c2.jpg" alt="">
-                        </div>
-                        <a href="#">
-                            <h3>Peringati HUT Brebes, TBM Sigambir Adakan Lomba Anak</h3>
-                        </a>
-                        <p class="text">
-                            12 Desember 2019
-                        <p class="text">
-                            Dalam rangka memperingati Hari Ulang Tahun Kabupaten Brebes ke 341 tahun, Taman Baca Masyarakat (TBM) Desa Sigambir Kecamatan Brebes Kabupaten Brebes ikut memeriahkan dengan </p>
-                    </div>
-                    <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-
-                        <a href="#" class="primary-btn">View Details</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 section-gap-top">
-                <div class="single-cause">
-                    <div class="top">
-                        <div class="thumb">
-                            <img class="c-img img-fluid" src="img/causes/c1.jpg" alt="">
-                        </div>
-                        <a href="#">
-                            <h3>Peringati HUT Brebes, TBM Sigambir Adakan Lomba Anak</h3>
-                        </a>
-                        <p class="text">
-                            12 Desember 2019
-                        <p class="text">
-                            Dalam rangka memperingati Hari Ulang Tahun Kabupaten Brebes ke 341 tahun, Taman Baca Masyarakat (TBM) Desa Sigambir Kecamatan Brebes Kabupaten Brebes ikut memeriahkan dengan </p>
-                    </div>
-                    <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                        <a href="#" class="primary-btn primary-btn3">View Details</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 section-gap-top">
-                <div class="single-cause">
-                    <div class="top">
-                        <div class="thumb">
-                            <img class="c-img img-fluid" src="img/causes/c1.jpg" alt="">
-                        </div>
-                        <a href="#">
-                            <h3>Peringati HUT Brebes, TBM Sigambir Adakan Lomba Anak</h3>
-                        </a>
-                        <p class="text">
-                            12 Desember 2019
-                        <p class="text">
-                            Dalam rangka memperingati Hari Ulang Tahun Kabupaten Brebes ke 341 tahun, Taman Baca Masyarakat (TBM) Desa Sigambir Kecamatan Brebes Kabupaten Brebes ikut memeriahkan dengan </p>
-                    </div>
-                    <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                        <a href="#" class="primary-btn primary-btn3">View Details</a>
-                    </div>
-                </div>
-            </div>
+                <?php endforeach;
+            }?>
         </div>
+            <?php echo $this->pagination->create_links();?>
     </div>
 </section>
 
