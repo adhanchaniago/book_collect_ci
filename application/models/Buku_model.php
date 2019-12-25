@@ -48,4 +48,17 @@ class Buku_model extends CI_Model{
         $this->db->where('id', $post['id_buku']);
         return $this->db->update($this->_table, $data);
     }
+
+    function search_buku($title){
+        $this->db->like('judul_buku', $title , 'both');
+        $this->db->order_by('judul_buku', 'ASC');
+        $this->db->limit(10);
+        return $this->db->get($this->_table)->result();
+    }
+
+    function search_buku_by_title(){
+        $post = $this->input->post();
+        $this->db->where('judul_buku', $post['judul_buku']);
+        return $this->db->get($this->_table)->row();
+    }
 }

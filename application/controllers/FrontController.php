@@ -62,4 +62,28 @@ class FrontController extends CI_Controller {
 
         $this->load->view('berita', $this->data);
     }
+
+    public function koleksi()
+    {
+        $this->data['header'] = 'header-bl';
+        $this->load->view('koleksi', $this->data);
+    }
+
+    function autocomplete_koleksi(){
+        if (isset($_GET['term'])) {
+            $result = $this->buku_model->search_buku($_GET['term']);
+            if (count($result) > 0) {
+                foreach ($result as $row)
+                    $arr_result[] = $row->judul_buku;
+                echo json_encode($arr_result);
+            }
+        }
+    }
+
+    public function by_judul()
+    {
+        $result = $this->buku_model->search_buku_by_title();
+        echo json_encode($result);
+    }
+
 }

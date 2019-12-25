@@ -59,7 +59,10 @@ $route['logout'] = 'loginController/logout';
 $route['register'] = 'loginController/register';
 $route['register/insert'] = 'loginController/insert_user';
 $route['berita'] = 'frontController/berita';
+$route['koleksi'] = 'frontController/koleksi';
 $route['berita/(:num)'] = 'frontController/berita';
+$route['buku/autocomplete'] = 'frontController/autocomplete_koleksi';
+$route['search/by_judul'] = 'frontController/by_judul';
 
 # admin
 $route['admin'] = 'adminController/dashboard';
