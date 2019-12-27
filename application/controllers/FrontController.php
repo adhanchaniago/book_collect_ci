@@ -12,6 +12,7 @@ class FrontController extends CI_Controller {
         $this->load->model("buku_model");
         $this->load->model("berita_model");
         $this->load->model("donasi_model");
+        $this->load->model("kontak_model");
         $this->load->library('pagination');
         $this->load->helper(array('url'));
     }
@@ -85,5 +86,19 @@ class FrontController extends CI_Controller {
         $result = $this->buku_model->search_buku_by_title();
         echo json_encode($result);
     }
+
+
+    public function kontak()
+    {
+        $this->data['header'] = 'header-bl';
+        $this->load->view('kontak', $this->data);
+    }
+
+    public function insert_kontak()
+    {
+        $data = $this->kontak_model->insert_kontak();
+        echo json_encode($data);
+    }
+
 
 }

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row align-items-center justify-content-between d-flex">
             <div id="logo">
-                <a href="index.html"><img src="<?php echo base_url();?>front/img/logo.jpg" alt="" title="" /></a>
+                <a href="<?php echo base_url();?>"><img src="<?php echo base_url();?>front/img/logo.jpg" alt="" title="" /></a>
             </div>
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
@@ -16,7 +16,7 @@
                             <li><a href="">Non Buku</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html">Kontak</a></li>
+                    <li><a href="<?php echo base_url();?>kontak">Kontak</a></li>
                     <li><a href="<?php echo base_url();?>login">Login</a></li>
                 </ul>
             </nav><!-- #nav-menu-container -->
