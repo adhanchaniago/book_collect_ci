@@ -73,37 +73,76 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <section class="condition-area event-details-area section-gap-bottom" id="data_buku" style="display: none;">
     <div class="container">
         <div class="row align-items-center justify-content-center">
-            <div class="col-lg-4 col-md-8 col-sm-10">
+            <div class="col-lg-4 card">
                 <div class="condition-left">
-                    <img class="img-fluid" id="img_buku" src="<?php echo base_url();?>front/img/events/ed1.jpg" alt="">
+                    <div class="card-body">
+                        <img class="img-fluid" id="img_buku" src="<?php echo base_url();?>front/img/events/ed1.jpg" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="offset-lg-1 col-lg-6">
+            <div class="col-lg-8">
                 <div class="condition-right">
-                    <div class="">
-                        <div class="progress-table">
-                            <div class="table-row">
-                                <div class="visit">Kode Buku :</div>
-                                <div class="visit" id="kode_buku"></div>
-                                <div class="visit">Jenis Buku :</div>
-                                <div class="visit" id="jenis_buku"></div>
+                    <div class="card">
+                        <div class="card-header">
+<!--                            <div class="card-title" id="judul_buku"></div>-->
+                            <h4 class="card-title" id="judul_buku"></h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-md-4 card-text">Kode Buku </div>
+                                        <div class="col-md-8 card-text" id="kode_buku"></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="table-row">
-                                <div class="visit">Judul Buku :</div>
-                                <div class="visit" id="judul_buku"></div>
-                                <div class="visit">Jumlah Buku :</div>
-                                <div class="visit" id="jumlah_buku"></div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-md-4 card-text">Jenis Buku </div>
+                                        <div class="col-md-8 card-text" id="jenis_buku"></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="table-row">
-                                <div class="visit">Pengarang :</div>
-                                <div class="visit" id="pengarang"></div>
-                                <div class="visit">Penerbit :</div>
-                                <div class="visit" id="penerbit"></div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-md-4 card-text">Tahun Terbit </div>
+                                        <div class="col-md-8 card-text" id="tahun_terbit"></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="table-row">
-                                <div class="visit">Deskripsi :</div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-md-4 card-text">Jumlah Buku </div>
+                                        <div class="col-md-8 card-text" id="jumlah_buku"></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="table-row" id="deskripsi">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-md-4 card-text">Pengarang </div>
+                                        <div class="col-md-8 card-text" id="pengarang"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-md-4 card-text">Penerbit </div>
+                                        <div class="col-md-8 card-text" id="penerbit"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-md-4 card-text">Deskripsi </div>
+                                        <div class="col-md-8 card-text" id="deskripsi"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -209,13 +248,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             success: function(data){
                 console.log(data);
                 $('#data_buku').css("display", "block");
-                $('#kode_buku').text(data.kode_buku);
-                $('#jenis_buku').text(data.jenis_buku);
+                $('#kode_buku').text(": "+data.kode_buku);
+                $('#jenis_buku').text(": "+data.jenis_buku);
                 $('#judul_buku').text(data.judul_buku);
-                $('#jumlah_buku').text(data.jumlah_buku);
-                $('#pengarang').text(data.pengarang);
-                $('#penerbit').text(data.penerbit);
-                $('#deskripsi').text(data.deskripsi);
+                $('#jumlah_buku').text(": "+data.jumlah_buku);
+                $('#pengarang').text(": "+data.pengarang);
+                $('#penerbit').text(": "+data.penerbit);
+                $('#deskripsi').text(": "+data.deskripsi);
+                $('#tahun_terbit').text(": "+data.tahun_terbit);
                 $('#img_buku').attr("src", "<?php echo base_url();?>dist/image/cover_buku/"+data.cover_buku);
             }
         });
