@@ -34,45 +34,43 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
 <?php $this->load->view($header);?>
-<section class="causes-area section-gap">
+<!--================Blog Area =================-->
+<section class="blog_area single-post-area section-gap">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-7 section-title">
-                <h1>Berita</h1>
-            </div>
-        </div>
         <div class="row">
-            <?php
-            if ($list_berita != null) {
-                foreach ($list_berita as $list_berita):
-                    ?>
-                    <div class="col-lg-4 col-md-6 section-gap-bottom">
-                        <div class="single-cause">
-                            <div class="top">
-                                <div class="thumb">
-                                    <img class="c-img img-fluid" src="<?php echo base_url()."dist/image/berita/".$list_berita->image;?>" alt="">
-                                </div>
-                                <a href="#">
-                                    <h3><?php echo $list_berita->judul; ?></h3>
-                                </a>
-                                <p class="text">
-                                    <?php echo date('d F Y', strtotime($list_berita->tanggal)); ?>
-                                <p class="text">
-                                    <?php echo substr(preg_replace('/<(style).*?\/(style)>|<.*?>|\s\s\s/', '', $list_berita->isi), 0, 199); ?>
-                                </p>
-                            </div>
-                            <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-
-                                <a href="<?php echo base_url()."berita/view/".$list_berita->id;?>" class="primary-btn primary-btn1">View Details</a>
-                            </div>
+            <div class="col-lg-8 posts-list">
+                <div class="single-post row">
+                    <h1><?php echo $data->judul; ?></h1>
+                    <div class="col-lg-12">
+                        <div class="feature-img">
+                            <img class="img-fluid" src="<?php echo base_url()."dist/image/berita/".$data->image;?>" alt="">
                         </div>
                     </div>
-                <?php endforeach;
-            }?>
+                    <div class="col-lg-3  col-md-3">
+                        <div class="blog_info text-right">
+                            <ul class="blog_meta list">
+                                <li><a href="#"><?php echo $data->penulis; ?><i class="lnr lnr-user"></i></a></li>
+                                <li><a href="#"><?php echo date('d F Y', strtotime($data->tanggal)); ?><i class="lnr lnr-calendar-full"></i></a></li>
+                            </ul>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9 blog_details">
+                        <?php echo $data->isi; ?>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+            </div>
         </div>
-            <?php echo $this->pagination->create_links();?>
     </div>
 </section>
+<!--================Blog Area =================-->
 
 <!-- start footer Area -->
 <footer class="footer-area section-gap">

@@ -64,6 +64,13 @@ class FrontController extends CI_Controller {
         $this->load->view('berita', $this->data);
     }
 
+    public function view_berita($id)
+    {
+        $this->data['header'] = 'header-bl';
+        $this->data['data'] = $this->berita_model->view_berita($id);
+        $this->load->view('view_berita', $this->data);
+    }
+
     public function koleksi()
     {
         $this->data['header'] = 'header-bl';

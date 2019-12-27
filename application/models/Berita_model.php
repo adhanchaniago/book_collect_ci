@@ -26,6 +26,12 @@ class Berita_model extends CI_Model{
         return $res->isi;
     }
 
+    function view_berita($id){
+        $this->db->where('id', $id);
+        $res = $this->db->get($this->_table)->row();
+        return $res;
+    }
+
     function jumlah_data(){
         return $this->db->get($this->_table)->num_rows();
     }

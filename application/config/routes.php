@@ -62,7 +62,7 @@ $route['berita'] = 'frontController/berita';
 $route['koleksi'] = 'frontController/koleksi';
 $route['kontak'] = 'frontController/kontak';
 $route['kontak/insert'] = 'frontController/insert_kontak';
-$route['berita/(:num)'] = 'frontController/berita';
+$route['berita/view/(:num)'] = 'frontController/view_berita/$1';
 $route['buku/autocomplete'] = 'frontController/autocomplete_koleksi';
 $route['search/by_judul'] = 'frontController/by_judul';
 
