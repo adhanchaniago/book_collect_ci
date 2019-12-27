@@ -107,5 +107,11 @@ class FrontController extends CI_Controller {
         echo json_encode($data);
     }
 
+    public function donasi()
+    {
+        $this->data['header'] = 'header-bl';
+        $this->load->view('donasi', $this->data);
+    }
+
 
 }

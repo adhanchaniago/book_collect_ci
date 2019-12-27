@@ -10,12 +10,13 @@
                     <li><a href="<?php echo base_url();?>berita">Berita</a></li>
                     <li><a href="<?php echo base_url();?>koleksi">Koleksi</a>
                     </li>
-                    <li class="menu-has-children"><a href="">Donasi</a>
-                        <ul>
-                            <li><a href="">Buku</a></li>
-                            <li><a href="">Non Buku</a></li>
-                        </ul>
-                    </li>
+<!--                    <li class="menu-has-children"><a href="">Donasi</a>-->
+<!--                        <ul>-->
+<!--                            <li><a href="">Buku</a></li>-->
+<!--                            <li><a href="">Non Buku</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+                    <li><a href="<?php echo base_url();?>donasi">Donasi</a></li>
                     <li><a href="<?php echo base_url();?>kontak">Kontak</a></li>
                     <li><a href="<?php echo base_url();?>login">Login</a></li>
                 </ul>

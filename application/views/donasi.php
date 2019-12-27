@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <meta charset="UTF-8">
 
-    <title><?php echo $data->judul; ?> | Taman Bacaan Masyarakat</title>
+    <title>Berita | Taman Bacaan Masyarakat</title>
 
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Roboto:300,400,500,700" rel="stylesheet">
 
@@ -34,44 +34,51 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
 <?php $this->load->view($header);?>
-<!--================Blog Area =================-->
-<section class="blog_area single-post-area section-gap">
+<section class="donation-area relative section-gap-top">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-8 posts-list">
-                <div class="single-post row">
-                    <h1><?php echo $data->judul; ?></h1>
-                    <div class="col-lg-12">
-                        <div class="feature-img">
-                            <img class="img-fluid" src="<?php echo base_url()."dist/image/berita/".$data->image;?>" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-3  col-md-3">
-                        <div class="blog_info text-right">
-                            <ul class="blog_meta list">
-                                <li><a href="#"><?php echo $data->penulis; ?><i class="lnr lnr-user"></i></a></li>
-                                <li><a href="#"><?php echo date('d F Y', strtotime($data->tanggal)); ?><i class="lnr lnr-calendar-full"></i></a></li>
-                            </ul>
-                            <ul class="social-links">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-github"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-9 col-md-9 blog_details">
-                        <?php echo $data->isi; ?>
-                    </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+                <div class="text-center text-wrap">
+                    <h1 class="mb-25 text-black">Donasi</h1>
+                    <p class="pt-10 pb-20">
+                        Bertujuan untuk menyajikan bahan pustaka dan informasi guna kepentingan belajar dan rekreasi masyarakat juga mengadakan kegiatan yang bersifat kajian dan penalaran keilmuwan
+                    </p>
+                    <p>Disini Kalian bisa memilih antara donasi buku atau donasi non buku </p>
                 </div>
-            </div>
-            <div class="col-lg-4">
             </div>
         </div>
     </div>
 </section>
-<!--================Blog Area =================-->
 
+<section class="donation-form-area section-gap-bottom">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-10 col-sm-12">
+                <div class="donation-box">
+                    <a href="<?php echo base_url();?>register">
+                        <button type="button" class="primary-btn w-100">Donasi Buku</button>
+                    </a>
+                     <!-- Link kelogin -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="donation-form-area section-gap-bottom">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-10 col-sm-12">
+                <div class="donation-box">
+                    <a href="<?php echo base_url();?>register">
+                        <button type="button" class="primary-btn w-100">Donasi Non Buku</button>
+                    </a><!-- Link kelogin -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- start footer Area -->
 <footer class="footer-area section-gap">
     <div class="container">

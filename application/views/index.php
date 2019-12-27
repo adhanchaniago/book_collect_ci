@@ -60,25 +60,25 @@
                     <img class="img-fluid w-100" src="<?php echo base_url();?>front/img/home-banner-img.jpg" alt="">
                     <img class="img-fluid w-100" src="<?php echo base_url();?>front/img/home-banner-img3.jpg" alt="">
                 </div>
-                <div class="form-wrap">
-                    <p class="mb-20 text-white">Pencarian Buku</p>
-                    <form class="form" role="form" autocomplete="off">
-                        <div class="row">
-                            <div class="col-md-7 wrap-left donation-input">
-                                <div class="form-group">
-                                    <input type="text" placeholder="" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Buku'"
-                                           class="form-control">
-                                    <span class="fs-14"></span>
-                                </div>
-                            </div>
-                            <div class="col-md-5 wrap-right">
-                                <div class="input-group dates-wrap">
-                                    <button type="submit" class="primary-btn white">Pencarian</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+<!--                <div class="form-wrap">-->
+<!--                    <p class="mb-20 text-white">Pencarian Buku</p>-->
+<!--                    <form class="form" role="form" autocomplete="off">-->
+<!--                        <div class="row">-->
+<!--                            <div class="col-md-7 wrap-left donation-input">-->
+<!--                                <div class="form-group">-->
+<!--                                    <input type="text" placeholder="" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Buku'"-->
+<!--                                           class="form-control">-->
+<!--                                    <span class="fs-14"></span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-md-5 wrap-right">-->
+<!--                                <div class="input-group dates-wrap">-->
+<!--                                    <button type="submit" class="primary-btn white">Pencarian</button>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </form>-->
+<!--                </div>-->
             </div>
         </div>
     </div>

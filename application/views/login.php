@@ -21,12 +21,13 @@
 <body class="hold-transition login-page">
 <div class="login-box">
     <div class="login-logo">
-        <a href="#"><b>TBM</b>SIgambir</a>
+<!--        <a href="#"><b>TBM</b>SIgambir</a>-->
+        <a href="<?php echo base_url();?>"><img src="<?php echo base_url();?>front/img/logo.jpg" alt="" title="" /></a>
     </div>
     <!-- /.login-logo -->
     <div class="card">
         <div class="card-body login-card-body">
-            <p class="login-box-msg">Sign in to start your session</p>
+            <p class="login-box-msg">Login Untuk Melakukan Donasi</p>
 
             <form action="<?php echo base_url();?>login/action" method="post">
                 <div class="input-group mb-3">
@@ -55,6 +56,9 @@
                     <!-- /.col -->
                 </div>
             </form>
+            <p class="mb-0">
+                <a href="<?php echo base_url(); ?>register" class="text-center">Untuk Melakukan Donasi Silahkan Daftar Dahulu</a>
+            </p>
             <!-- /.social-auth-links -->
         </div>
         <!-- /.login-card-body -->

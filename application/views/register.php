@@ -23,12 +23,13 @@
 <body class="hold-transition register-page">
 <div class="register-box col-md-6">
     <div class="register-logo">
-        <a href="#"><b>TBM</b>SiGambir</a>
+<!--        <a href="#"><b>TBM</b>SiGambir</a>-->
+        <a href="<?php echo base_url();?>"><img src="<?php echo base_url();?>front/img/logo.jpg" alt="" title="" /></a>
     </div>
 
     <div class="card">
         <div class="card-body register-card-body">
-            <p class="login-box-msg">Register a new membership</p>
+            <p class="login-box-msg">Silahkan Mendaftar Untuk Donasi Lalu Login</p>
 
             <form id="form_submit_invoice">
                 <div class="row">
@@ -110,7 +111,7 @@
                 </div>
             </form>
 
-            <a href="/login" class="text-center">I already have a membership</a>
+            <a href="<?php echo base_url(); ?>login" class="text-center">Saya Sudah Pernah Mendaftar</a>
         </div>
         <!-- /.form-box -->
     </div><!-- /.card -->

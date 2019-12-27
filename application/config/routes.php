@@ -61,6 +61,7 @@ $route['register/insert'] = 'loginController/insert_user';
 $route['berita'] = 'frontController/berita';
 $route['koleksi'] = 'frontController/koleksi';
 $route['kontak'] = 'frontController/kontak';
+$route['donasi'] = 'frontController/donasi';
 $route['kontak/insert'] = 'frontController/insert_kontak';
 $route['berita/view/(:num)'] = 'frontController/view_berita/$1';
 $route['buku/autocomplete'] = 'frontController/autocomplete_koleksi';
