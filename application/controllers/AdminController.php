@@ -12,6 +12,7 @@ class AdminController extends CI_Controller {
         $this->load->model("buku_model");
         $this->load->model("berita_model");
         $this->load->model("donasi_model");
+        $this->load->model("kontak_model");
         if($this->session->userdata('status') != "login"){
             redirect(base_url("login"));
         }
@@ -175,5 +176,20 @@ class AdminController extends CI_Controller {
         $this->data['style'] = null;
         $this->data['list_donasi'] = $this->donasi_model->list_donasi_non_buku_with_anggota();
         $this->load->view('layout/master_layout', $this->data);
+    }
+
+    public function list_kontak()
+    {
+        $this->data['content'] = 'list_kontak';
+        $this->data['sidebar'] = 'sidebar_admin';
+        $this->data['javascript'] = 'kontak_js';
+        $this->data['style'] = null;
+        $this->data['list_kontak'] = $this->kontak_model->list_kontak();
+        $this->load->view('layout/master_layout', $this->data);
+    }
+
+    public function delete_kontak(){
+        $data = $this->kontak_model->delete_kontak();
+        echo json_encode($data);
     }
 }

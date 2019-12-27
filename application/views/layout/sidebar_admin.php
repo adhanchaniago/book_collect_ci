@@ -88,6 +88,23 @@
             </li>
             <li class="nav-item has-treeview">
                 <a href="#" class="nav-link active">
+                    <i class="nav-icon fas fa-phone"></i>
+                    <p>
+                        Kelola Kontak
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="<?php echo base_url(); ?>admin/kontak/list" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>List Kontak</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item has-treeview">
+                <a href="#" class="nav-link active">
                     <i class="nav-icon fas fa-tachometer-alt"></i>
                     <p>
                         User

@@ -14,4 +14,14 @@ class Kontak_model extends CI_Model{
         $hasil = $this->db->insert($this->_table, $this);
         return $hasil;
     }
+
+    function list_kontak(){
+        return $this->db->get($this->_table)->result();
+    }
+
+    function delete_kontak(){
+        $post = $this->input->post();
+        $this->db->where('id', $post['id']);
+        return $this->db->delete($this->_table);
+    }
 }
