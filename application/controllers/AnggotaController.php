@@ -187,9 +187,16 @@ class AnggotaController extends CI_Controller {
         $pdf->Cell(30,6,$data->pekerjaan,1,0);
         $pdf->Cell(30,6,$data->no_hp,1,0);
         $pdf->Cell(30,6,$data->email,1,0);
-        $pdf->Cell(60,6,$data->alamat,1,0);
-        $pdf->Cell(22,6,$data->terbilang,1,0);
-        $pdf->Cell(25,6,$data->tgl_transfer,1,1);
+        $x = $pdf->GetX();
+        $y = $pdf->GetY();
+        $pdf->MultiCell(60,6,$data->alamat,1,'L');
+        $pdf->SetXY($x + 60, $y);
+        $pdf->MultiCell(22,6,$data->terbilang,1,'L');
+        $pdf->SetXY($x + 60, $y);
+        $x_cur = $pdf->GetX();
+//        $pdf->MultiCell(47,6,$data->tgl_transfer,1,0);
+        $pdf->MultiCell(47,6,$data->tgl_transfer,1,0);
+        $pdf->Ln(1);
         $pdf->Cell(10,11,'',0,1,'C');
         $pdf->Output();
     }

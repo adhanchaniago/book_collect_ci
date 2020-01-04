@@ -46,14 +46,14 @@
                                         <td><span class="badge
                                         <?php
                                             if ( $list_donasi['progress'] == "belum diproses"){
-                                                echo "badge-warning";
+                                                echo 'badge-warning" data-toggle="modal" data-toggle="tooltip" data-placement="bottom" title="Akan Di Proses Dalam 3 Hari dan Akan Mendapatkan Notifikasi"';
                                             } elseif ($list_donasi['progress'] == "sedang diproses"){
-                                                echo "badge-success";
+                                                echo 'badge-success"';
                                             } elseif ($list_donasi['progress'] == "selesai diproses"){
-                                                echo "badge-danger";
+                                                echo 'badge-danger"';
                                             }
                                             ?>
-                                        "><?php echo $list_donasi['progress'] ?></span></td>
+                                        ><?php echo $list_donasi['progress'] ?></span></td>
                                         <td><?php echo $list_donasi['tgl_transfer'] ?></td>
                                         <td>
                                             <a
