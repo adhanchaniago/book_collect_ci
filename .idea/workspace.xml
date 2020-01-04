@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02e99d81-8b26-4e6b-bc86-a916affbe44b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/AnggotaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/AnggotaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/pages/list_donasi_anggota.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/pages/list_donasi_anggota.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/pages/list_donasi_non_buku_anggota.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/pages/list_donasi_non_buku_anggota.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/pages/kelola_donasi_buku.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/pages/kelola_donasi_buku.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/pages/kelola_donasi_non_buku.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/pages/kelola_donasi_non_buku.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,37 +22,54 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/pages/list_donasi_anggota.php">
+        <entry file="file://$PROJECT_DIR$/application/views/pages/list_donasi_non_buku_anggota.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="55" selection-end-column="46" />
+            <state relative-caret-position="675">
+              <caret line="66" column="44" lean-forward="true" selection-start-line="66" selection-start-column="44" selection-end-line="68" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/pages/list_donasi_non_buku_anggota.php">
+        <entry file="file://$PROJECT_DIR$/application/controllers/AdminController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
+            <state relative-caret-position="315">
+              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+              <folding>
+                <element signature="n#cetak_donasi#0;n#AdminController#0;n#!!top" />
+                <element signature="n#cetak_donasi_non_buku#0;n#AdminController#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/pages/kelola_donasi_buku.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="35" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/controllers/AnggotaController.php">
+        <entry file="file://$PROJECT_DIR$/application/views/pages/kelola_donasi_non_buku.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1711">
-              <caret line="196" column="56" lean-forward="true" selection-start-line="196" selection-start-column="56" selection-end-line="196" selection-end-column="56" />
+            <state relative-caret-position="180">
+              <caret line="12" column="81" selection-start-line="12" selection-start-column="81" selection-end-line="12" selection-end-column="81" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/Donasi_model.php">
+        <entry file="file://$PROJECT_DIR$/application/controllers/AnggotaController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="92" column="38" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="38" />
+            <state relative-caret-position="240">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="36" />
+              <folding>
+                <element signature="n#cetak_donasi#0;n#AnggotaController#0;n#!!top" />
+                <element signature="n#cetak_donasi_non_buku#0;n#AnggotaController#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="796">
-              <caret line="96" column="89" selection-start-line="96" selection-start-column="89" selection-end-line="96" selection-end-column="89" />
+            <state relative-caret-position="646">
+              <caret line="88" column="63" selection-start-line="88" selection-start-column="63" selection-end-line="88" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -79,7 +96,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>encry</find>
       <find>toastrDefaultSuccess</find>
       <find>toastr</find>
       <find>textarea</find>
@@ -109,6 +125,7 @@
       <find>swal</find>
       <find>redirec</find>
       <find>base</find>
+      <find>Data</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/application/models</dir>
@@ -124,7 +141,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/application/views/javascript/donasi_js.php" />
-        <option value="$PROJECT_DIR$/application/views/pages/kelola_donasi_non_buku.php" />
         <option value="$PROJECT_DIR$/application/views/javascript/kelola_data_donasi_js.php" />
         <option value="$PROJECT_DIR$/application/views/javascript/add_berita_js.php" />
         <option value="$PROJECT_DIR$/application/views/pages/add_berita.php" />
@@ -140,7 +156,6 @@
         <option value="$PROJECT_DIR$/application/views/pages/add_buku.php" />
         <option value="$PROJECT_DIR$/application/views/javascript/add_buku_js.php" />
         <option value="$PROJECT_DIR$/application/views/pages/list_buku.php" />
-        <option value="$PROJECT_DIR$/application/views/pages/kelola_donasi_buku.php" />
         <option value="$USER_HOME$/template_admin/sigambir/css/main.css" />
         <option value="$USER_HOME$/template_admin/sigambir/berita.html" />
         <option value="$USER_HOME$/template_admin/sigambir/index.html" />
@@ -150,7 +165,6 @@
         <option value="$USER_HOME$/template_admin/sigambir/contact.html" />
         <option value="$PROJECT_DIR$/application/views/kontak.php" />
         <option value="$PROJECT_DIR$/application/views/layout/sidebar_admin.php" />
-        <option value="$PROJECT_DIR$/application/controllers/AdminController.php" />
         <option value="$PROJECT_DIR$/application/views/javascript/kontak_js.php" />
         <option value="$PROJECT_DIR$/application/models/Kontak_model.php" />
         <option value="$PROJECT_DIR$/application/views/pages/list_kontak.php" />
@@ -170,10 +184,13 @@
         <option value="$USER_HOME$/rasabaik_project/budaya_ntt/resources/views/show_suku.blade.php" />
         <option value="$PROJECT_DIR$/application/libraries/Pdf.php" />
         <option value="$PROJECT_DIR$/application/models/Donasi_model.php" />
-        <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/application/views/pages/list_donasi_anggota.php" />
         <option value="$PROJECT_DIR$/application/views/pages/list_donasi_non_buku_anggota.php" />
         <option value="$PROJECT_DIR$/application/controllers/AnggotaController.php" />
+        <option value="$PROJECT_DIR$/application/config/routes.php" />
+        <option value="$PROJECT_DIR$/application/views/pages/kelola_donasi_buku.php" />
+        <option value="$PROJECT_DIR$/application/controllers/AdminController.php" />
+        <option value="$PROJECT_DIR$/application/views/pages/kelola_donasi_non_buku.php" />
       </list>
     </option>
   </component>
@@ -208,6 +225,12 @@
               <item name="book_collect_ci" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book_collect_ci" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book_collect_ci" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="book_collect_ci" type="b2602c69:ProjectViewProjectNode" />
@@ -308,15 +331,15 @@
       <workItem from="1577442176867" duration="3082000" />
       <workItem from="1577453696701" duration="12750000" />
       <workItem from="1578006118359" duration="843000" />
-      <workItem from="1578107541098" duration="20742000" />
+      <workItem from="1578107541098" duration="21182000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194792000" />
+    <option name="totallyTimeSpent" value="195232000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1055" extended-state="7" />
+    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31216648" />
@@ -365,20 +388,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/template_admin/sigambir/blog-home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="283" column="44" selection-start-line="283" selection-start-column="44" selection-end-line="283" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="248" column="16" selection-start-line="248" selection-start-column="16" selection-end-line="248" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/pages/add_donasi.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -469,13 +478,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="781">
-          <caret line="190" column="33" selection-start-line="190" selection-start-column="33" selection-end-line="190" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -688,20 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Donasi_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="92" column="38" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="796">
-          <caret line="96" column="89" selection-start-line="96" selection-start-column="89" selection-end-line="96" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/pages/list_donasi_anggota.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
@@ -709,17 +697,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="88" column="63" selection-start-line="88" selection-start-column="63" selection-end-line="88" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Donasi_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="92" column="38" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/pages/list_donasi_non_buku_anggota.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
+        <state relative-caret-position="675">
+          <caret line="66" column="44" lean-forward="true" selection-start-line="66" selection-start-column="44" selection-end-line="68" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/AnggotaController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1711">
-          <caret line="196" column="56" lean-forward="true" selection-start-line="196" selection-start-column="56" selection-end-line="196" selection-end-column="56" />
+        <state relative-caret-position="240">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="36" />
+          <folding>
+            <element signature="n#cetak_donasi#0;n#AnggotaController#0;n#!!top" />
+            <element signature="n#cetak_donasi_non_buku#0;n#AnggotaController#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding>
+            <element signature="n#cetak_donasi#0;n#AdminController#0;n#!!top" />
+            <element signature="n#cetak_donasi_non_buku#0;n#AdminController#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/pages/kelola_donasi_buku.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/pages/kelola_donasi_non_buku.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="81" selection-start-line="12" selection-start-column="81" selection-end-line="12" selection-end-column="81" />
         </state>
       </provider>
     </entry>

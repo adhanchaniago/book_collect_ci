@@ -67,6 +67,9 @@
                                                     data-toggle="modal" data-target="#edit-progres">
                                                 <button data-toggle="modal" data-target="#modal-default" data-toggle="tooltip" data-placement="top" title="Edit Progress Donasi"><i class="fas fa-edit"></i></button>
                                             </a>
+                                            <a href="<?php echo base_url().'admin/cetak_donasi/'.$list_donasi['id'];?>" target="_blank">
+                                                <button data-toggle="modal" data-toggle="tooltip" data-placement="top" title="Cetak Donasi"><i class="fas fa-print"></i></button>
+                                            </a>
                                         </td>
                                     </tr>
                                 <?php endforeach;

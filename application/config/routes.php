@@ -85,6 +85,8 @@ $route['admin/update_buku'] = 'adminController/edit_buku';
 $route['admin/non_buku/change_progres'] = 'adminController/change_progres_non_buku';
 $route['admin/buku/change_progres'] = 'adminController/change_progres_buku';
 $route['admin/content_berita/(:any)'] = 'adminController/content_berita/$1';
+$route['admin/cetak_donasi/(:num)'] = 'adminController/cetak_donasi/$1';
+$route['admin/cetak_donasi_non_buku/(:num)'] = 'adminController/cetak_donasi_non_buku/$1';
 # anggota
 $route['anggota'] = 'anggotaController/dashboard';
 $route['anggota/add_donasi'] = 'anggotaController/add_donasi';

@@ -10,7 +10,7 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">DataTables</li>
+                        <li class="breadcrumb-item active">Kelola Donasi Non Buku</li>
                     </ol>
                 </div>
             </div>
@@ -71,6 +71,9 @@
                                                     data-id="<?php echo $list_donasi['id']?>"
                                                     data-toggle="modal" data-target="#edit-progres">
                                                 <button data-toggle="modal" data-target="#modal-default" data-toggle="tooltip" data-placement="top" title="Edit Progress Donasi"><i class="fas fa-edit"></i></button>
+                                            </a>
+                                            <a href="<?php echo base_url().'admin/cetak_donasi_non_buku/'.$list_donasi['id'];?>" target="_blank">
+                                                <button data-toggle="modal" data-toggle="tooltip" data-placement="top" title="Cetak Donasi"><i class="fas fa-print"></i></button>
                                             </a>
                                         </td>
                                     </tr>
