@@ -31,9 +31,10 @@
                                 <th>Nama Donatur</th>
                                 <th>Instansi</th>
                                 <th>Progress</th>
-                                <th>Jumlah Buku</th>
+                                <th width="8%">Jumlah Buku</th>
                                 <th>No Hp</th>
                                 <th>Cara Donasi</th>
+                                <th>Action</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -57,6 +58,11 @@
                                         <td><?php echo $list_donasi['jumlah_buku'] ?></td>
                                         <td><?php echo $list_donasi['no_hp'] ?></td>
                                         <td><?php echo $list_donasi['cara_donasi'] ?></td>
+                                        <td>
+                                            <a href="<?php echo base_url().'anggota/cetak_donasi/'.$list_donasi['id'];?>" target="_blank">
+                                                <button data-toggle="modal" data-toggle="tooltip" data-placement="top" title="Cetak Donasi"><i class="fas fa-print"></i></button>
+                                            </a>
+                                        </td>
                                     </tr>
                                 <?php endforeach;
                             } else {echo "<tr><td colspan='8'>Data Not Found</td></tr>";}?>

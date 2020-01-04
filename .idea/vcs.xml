@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$USER_HOME$/project_laravel_arip/budaya_ntt" vcs="Git" />
     <mapping directory="$USER_HOME$/rasabaik_project/accounting_rasabaik" vcs="Git" />
+    <mapping directory="$USER_HOME$/rasabaik_project/budaya_ntt" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
 </project>
