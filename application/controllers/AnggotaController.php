@@ -149,4 +149,48 @@ class AnggotaController extends CI_Controller {
         }
         $pdf->Output();
     }
+
+    public function cetak_donasi_non_buku($id)
+    {
+        $data = $this->donasi_model->get_donasi_non_buku_by_id($id);
+        $pdf = new FPDF('L','mm','A4');
+        // membuat halaman baru
+        $pdf->AddPage();
+        // setting jenis font yang akan digunakan
+        $pdf->SetTitle('Cetak Donasi Non Buku| TBM Sigambir');
+        $pdf->SetFont('Arial','BU',12);
+        // mencetak string
+        $pdf->Cell(80,7,'CETAK BUKTI DONASI NON BUKU',0,0,'C');
+        $pdf->SetFont('Arial','B',12);
+        $pdf->Cell(290,7,'TAMAN BACAAN MASYARAKAT',0,1,'C');
+        $pdf->SetFont('Arial','B',12);
+        $pdf->Cell(450,3,'"SIGAMBIR"',0,1,'C');
+        $pdf->SetFont('Arial','',9);
+        $pdf->Cell(450,7,'Jalan Dewi Sartika Desa Sigambir Brebes',0,1,'C');
+        $pdf->SetFont('Arial','',9);
+        $pdf->Cell(450,2,'Telp: 085647361412 Email: tbmsigambir@gmail.com',0,1,'C');
+        $pdf->Cell(10,20,'',0,1,'C');
+        $pdf->SetFont('Arial','B',8);
+        $pdf->Cell(20,6,'No Donatur',1,0);
+        $pdf->Cell(30,6,'Nama Donatur',1,0);
+        $pdf->Cell(27,6,'Instansi',1,0);
+        $pdf->Cell(30,6,'Pekerjaan',1,0);
+        $pdf->Cell(30,6,'No Hp',1,0);
+        $pdf->Cell(30,6,'Email',1,0);
+        $pdf->Cell(60,6,'Alamat',1,0);
+        $pdf->Cell(22,6,'Terbilang',1,0);
+        $pdf->Cell(25,6,'Tgl Transfer',1,1);
+        $pdf->SetFont('Arial','',8);
+        $pdf->Cell(20,6,$data->id,1,0);
+        $pdf->Cell(30,6,$data->nama_donatur,1,0);
+        $pdf->Cell(27,6,$data->instansi,1,0);
+        $pdf->Cell(30,6,$data->pekerjaan,1,0);
+        $pdf->Cell(30,6,$data->no_hp,1,0);
+        $pdf->Cell(30,6,$data->email,1,0);
+        $pdf->Cell(60,6,$data->alamat,1,0);
+        $pdf->Cell(22,6,$data->terbilang,1,0);
+        $pdf->Cell(25,6,$data->tgl_transfer,1,1);
+        $pdf->Cell(10,11,'',0,1,'C');
+        $pdf->Output();
+    }
 }

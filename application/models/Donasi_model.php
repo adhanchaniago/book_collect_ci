@@ -89,4 +89,10 @@ FROM `donasi_buku` JOIN `anggota` ON `anggota`.`id_anggota` = `donasi_buku`.`id_
         $this->db->where('id', $id_donasi);
         return $this->db->get("donasi_buku")->row();
     }
+
+    function get_donasi_non_buku_by_id($id_donasi)
+    {
+        $this->db->where('id', $id_donasi);
+        return $this->db->get("donasi_non_buku")->row();
+    }
 }

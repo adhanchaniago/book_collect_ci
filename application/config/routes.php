@@ -94,3 +94,4 @@ $route['anggota/add_donasi_non_buku'] = 'anggotaController/add_non_donasi';
 $route['anggota/insert_donasi'] = 'anggotaController/insert_donasi';
 $route['anggota/insert_donasi_non_buku'] = 'anggotaController/insert_donasi_non_buku';
 $route['anggota/cetak_donasi/(:num)'] = 'anggotaController/cetak_donasi/$1';
+$route['anggota/cetak_donasi_non_buku/(:num)'] = 'anggotaController/cetak_donasi_non_buku/$1';

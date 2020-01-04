@@ -33,6 +33,7 @@
                                 <th>Progress</th>
                                 <th>Tgl Transfer</th>
                                 <th>Bukti Transfer</th>
+                                <th>Action</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -60,6 +61,11 @@
                                                 data-bukti="<?php echo $list_donasi['bukti_transfer']?>"
                                                 data-toggle="modal" data-target="#show-bukti">
                                                 <button data-toggle="modal" data-target="#modal-default" class="btn btn-info">View Bukti Transaksi</button>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="<?php echo base_url().'anggota/cetak_donasi_non_buku/'.$list_donasi['id'];?>" target="_blank">
+                                                <button data-toggle="modal" data-toggle="tooltip" data-placement="top" title="Cetak Donasi"><i class="fas fa-print"></i></button>
                                             </a>
                                         </td>
                                     </tr>
