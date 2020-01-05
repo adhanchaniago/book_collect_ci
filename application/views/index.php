@@ -199,74 +199,38 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-7 section-title">
-                <h1>Berita</h1>
+                <h1>Berita Terkini</h1>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="single-cause">
-                    <div class="top">
-                        <div class="thumb">
-                            <img class="c-img img-fluid" src="<?php echo base_url();?>front/img/causes/c1.jpg" alt="">
+            <?php
+            if ($list_berita != null) {
+                foreach ($list_berita as $list_berita):
+                    ?>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-cause">
+                            <div class="top">
+                                <div class="thumb">
+                                    <img class="c-img img-fluid" src="<?php echo base_url()."dist/image/berita/".$list_berita->image;?>" alt="">
+                                </div>
+                                <a href="#">
+                                    <h3><?php echo $list_berita->judul; ?></h3>
+                                </a>
+                                <p class="text">
+                                    <?php echo date('d F Y', strtotime($list_berita->tanggal)); ?>
+                                <p class="text">
+                                    <?php echo substr(preg_replace('/<(style).*?\/(style)>|<.*?>|\s\s\s/', '', $list_berita->isi), 0, 199); ?>
+                                </p>
+                            </div>
+                            <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+
+                                <a href="<?php echo base_url()."berita/view/".$list_berita->id;?>" class="primary-btn primary-btn1">View Details</a>
+                            </div>
                         </div>
-                        <a href="#">
-                            <h3>Perkenalkan Taman Baca Masyarakat Melalui Perlombaan Anak</h3>
-                        </a>
-                        <p class="text">
-                            12 Desember 2019
-                        <p class="text">
-                            Brebes,- Dalam rangka memperingati Hari Ulang Tahun Kabupaten Brebes ke 341 tahun, Taman Baca Masyarakat (TBM) Desa Sigambir Kecamatan Brebes Kabupaten Brebes ikut memeriahkan dengan mengadakan perlombaan tingkat paud, TK/RA dan SD/Mi sederajat, dimana ada tiga katagori yang diperlombakan yakni Lomba mewarnai tingkat Paud/KB
-                        </p>
                     </div>
-                    <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+                <?php endforeach;
+            }?>
 
-                        <a href="#" class="primary-btn primary-btn1">View Details</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="single-cause">
-                    <div class="top">
-                        <div class="thumb">
-                            <img class="c-img img-fluid" src="<?php echo base_url();?>front/img/causes/c2.jpg" alt="">
-                        </div>
-                        <a href="#">
-                            <h3>Peringati HUT Brebes, TBM Sigambir Adakan Lomba Anak</h3>
-                        </a>
-                        <p class="text">
-                            12 Desember 2019
-                        <p class="text">
-                            Dalam rangka memperingati Hari Ulang Tahun Kabupaten Brebes ke 341 tahun, Taman Baca Masyarakat (TBM) Desa Sigambir Kecamatan Brebes Kabupaten Brebes ikut memeriahkan dengan mengadakan perlombaan tingkat paud, TK/RA dan SD/Mi sederajat, dimana ada tiga katagori yang diperlombakan yakni Lomba mewarnai tingkat Paud/KB dan tingkat TK/RA,
-                        </p>
-                    </div>
-                    <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-
-                        <a href="#" class="primary-btn">View Details</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="single-cause">
-                    <div class="top">
-                        <div class="thumb">
-                            <img class="c-img img-fluid" src="<?php echo base_url();?>front/img/causes/c1.jpg" alt="">
-                        </div>
-                        <a href="#">
-                            <h3>Peringati HUT Brebes, TBM Sigambir Adakan Lomba Anak</h3>
-                        </a>
-                        <p class="text">
-                            12 Desember 2019
-                        <p class="text">
-                            Dalam rangka memperingati Hari Ulang Tahun Kabupaten Brebes ke 341 tahun, Taman Baca Masyarakat (TBM) Desa Sigambir Kecamatan Brebes Kabupaten Brebes ikut memeriahkan dengan mengadakan perlombaan tingkat paud, TK/RA dan SD/Mi sederajat, dimana ada tiga katagori yang diperlombakan yakni Lomba mewarnai tingkat Paud/KB dan tingkat TK/RA,
-                        </p>
-                    </div>
-                    <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                        <a href="#" class="primary-btn primary-btn3">View Details</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>

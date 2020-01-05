@@ -20,6 +20,7 @@ class FrontController extends CI_Controller {
     public function index()
     {
         $this->data['header'] = 'header';
+        $this->data['list_berita'] =  $this->berita_model->get_lastest_news();
         $this->load->view('index', $this->data);
     }
 

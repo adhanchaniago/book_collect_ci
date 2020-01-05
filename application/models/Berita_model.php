@@ -42,4 +42,10 @@ class Berita_model extends CI_Model{
         return $query;
     }
 
+    function get_lastest_news(){
+        $this->db->order_by("tanggal", "desc");
+        $this->db->limit(3, 0);
+        $query = $this->db->get($this->_table)->result();
+        return $query;
+    }
 }
